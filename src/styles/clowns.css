@@ -1,0 +1,184 @@
+#container {
+    margin: 20px;
+}
+
+/* LOGO */
+.pageName {
+    font-size: 42px;
+    color: #F22E52;
+}
+
+/* LOGO CONTAINER */
+.page-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* LOGO IMAGE */
+.logo {
+    border-radius: 50%;
+    height: 175px;
+    width: 175px;
+    background-image: url('https://i.ibb.co/J2JMS2X/clowns-Edited.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* RESERVATION FORM */
+.field {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+/* Changes outline for the inputs on Service Form */
+input[type=text],
+input[type=date],
+input[type=number] {
+    outline-color: #F22E52;
+}
+
+.label {
+    font-size: 24px;
+}
+
+.inputText { 
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+#submitRequest {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #F22E52;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0px 8px 0px #731627;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Button styles that make it look like it's being pressed! B) */
+#submitRequest:active {
+    box-shadow: 0px 5px 0px #731627;
+    transform: translateY(2px);
+    background-color: #F22E52;
+}
+
+/* RES REQUESTS */
+.reservations {
+    font-size: 22px;
+}
+
+.request {
+    font-size: 32px !important;
+}
+
+/* Removes the padding so that the ul/li's are aligned with the service request form */
+.reservationList {
+    padding: 0;
+}
+
+/* This is where the description text is housed */
+.reservationText {
+    font-size: 18px;
+}
+
+/* This is the <li> for request items */
+.reservationItem {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #FDE0D6;
+}
+
+/* This is the <li> for the table titles */
+.reservationTitle {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #731627 !important;
+}
+
+/* 'Description' */
+.descriptionTitle {
+    color: white;
+    font-size: 20px;
+}
+
+/* 'Completed By' */
+.completedTitle {
+    color: white;
+    font-size: 20px;
+    margin-right: 80px;
+}
+
+/* Date of reservation */
+.reservationDate {
+    display: inline;
+    font-size: 18px;
+}
+
+/* Changes background color of reservation request items every other order */
+ul>li:nth-child(odd) {
+    background-color: #FDE0D6;
+}
+
+/* Completed orders have a different background color. */
+.completed {
+    background-color: #F59F8E !important;
+}
+
+
+/* reservation request deletion button */
+.reservation__delete {
+    background-color: #F22E52;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* CLOWN DROP-DOWN MENU STYLES */
+.clowns {
+    font-size: 18px;
+    outline-color: #F22E52;
+    padding: 2px;
+    margin-right: 10px;
+}
+
+/* COMPLETED BY CLOWN NAME STYLING */
+.completedBy {
+    display: inline;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .reservationItem,
+    .reservationTitle {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+      margin: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .field {
+      flex-direction: column;
+      width: 80%;
+      margin: 20px 0;
+    }
+}

@@ -1,0 +1,35 @@
+{
+  "clowns": [],
+  "completions": [
+    {
+      "reservationId": 1,
+      "clownId": 1,
+      "clownName": "Buttons",
+      "date_created": "2023-03-29T21:15:11.398Z",
+      "id": 1
+    }
+  ],
+  "reservations": [
+    {
+      "adult": "Test",
+      "child": "",
+      "address": "",
+      "guests": "",
+      "length": "",
+      "date": "2023-03-29",
+      "completed": true,
+      "id": 1,
+      "completedBy": "Buttons"
+    },
+    {
+      "adult": "Test",
+      "child": "",
+      "address": "",
+      "guests": "",
+      "length": "",
+      "date": "2023-03-27",
+      "completed": false,
+      "id": 4
+    }
+  ]
+}
